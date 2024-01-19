@@ -172,17 +172,13 @@ const userNotFound = () => {
 
 // Event Listeners
 searchButton.addEventListener("click", async () => {
-  currentpage = 1; // Set current page to 1 when searching
-  await fetchUserData(searchInput.value);
-  create_page(currentpage); // Ensure pagination is created for the first page
-  displayRepositories(searchInput.value, currentpage);
+  fetchUserData(searchInput.value);
   header.style.display = "none";
   loader.style.display='block'
 });
 
 searchInput.addEventListener("keypress", (event) => {
   if (event.key === "Enter") {
-    currentpage = 1; // Set current page to 1 when searching
     fetchUserData(searchInput.value);
     header.style.display = "none";
     loader.style.display='block'
