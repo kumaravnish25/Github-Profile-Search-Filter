@@ -1,0 +1,374 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: sans-serif;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+p,
+a {
+	color: #000;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+.header {
+	max-width: 100%;
+	height: 30rem;
+	margin: 3rem auto;
+	margin-top: 17rem;
+}
+
+.header__container {
+	background-color: #f4f4f4;
+	border-bottom: 1px solid #aaa;
+	box-shadow: 0px 0px 2px 1px rgb(0 0 0 / 20%);
+	border-radius: 20px;
+	max-width: 49rem;
+	margin: 10rem auto;
+	padding: 7rem;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.header__logo {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	margin-bottom: 1rem;
+}
+
+.header__title {
+	font-size: 2.5rem;
+}
+
+.api__link {
+	color: #238636;
+	text-decoration: none;
+}
+
+.nav {
+	width: 100%;
+	max-width: 250px;
+	display: flex;
+}
+
+.search__input {
+	width: 100%;
+	padding: 1rem 1.5rem;
+	font-size: 1.5rem;
+	border: 1px solid #bbb;
+	border-radius: 6px 0 0 6px;
+}
+
+.search__button {
+	width: 35px;
+	border: none;
+	background-color: #238636;
+	border-radius: 0 6px 6px 0;
+	cursor: pointer;
+}
+
+.fa-search {
+	color: #fff;
+}
+
+/* For Loader */
+
+.loader {
+	border: 16px solid #f3f3f3;
+	border-top: 16px solid #009b60;
+	border-radius: 50%;
+	margin: 15rem auto;
+	width: 140px;
+	height: 150px;
+	animation: spin 10s linear infinite;
+	display: none;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+
+/* User Data */
+main {
+	max-width: 110rem;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.user {
+	display: flex;
+	gap: 2rem;
+}
+
+.user__image {
+	flex: 0 0 300px;
+}
+
+.user__image img {
+	border-radius: 8px;
+}
+
+.user__info {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.user__names {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.user__name {
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.user__name2 {
+	color: #238636;
+	text-decoration: none;
+}
+
+.user__location,
+.user__website {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.user__location i,
+.user__website i {
+	font-size: 1.5rem;
+}
+
+.user__website a {
+	color: #238636;
+	text-decoration: none;
+}
+
+.user__stats {
+	display: flex;
+	gap: 2rem;
+	margin-top: auto;
+}
+
+.firstStat,
+.secondStat,
+.thirdStat {
+	text-align: center;
+}
+
+.firstStatNumber,
+.secondStatNumber,
+.thirdStatNumber {
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+
+.error {
+	display: none;
+}
+
+.user__secondaryInfo {
+	max-width: 110rem;
+	margin: 0 auto;
+	padding: 2rem;
+
+}
+
+.user__repositories {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 1rem;
+}
+
+.repository {
+	margin-bottom: 2rem;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 1rem;
+	border: 1px solid black;
+	padding: 1rem;
+}
+
+.repository__name {
+	color: rgba(25, 182, 230, 0.884);
+	text-decoration: none;
+	font-size: 2.2rem;
+	font-weight: 800;
+}
+
+.repository__languages {
+	margin-top: 2rem;
+	background-color: rgba(48, 145, 224, 0.795);
+	color: white;
+	border-radius: 10px;
+	width: min-content;
+	padding: 6px;
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.user__followers__title,
+.user__repositories__title {
+	font-size: 2rem;
+	margin-bottom: 2rem;
+}
+
+/* Pagination Styles */
+#box {
+	display: none;
+}
+
+.box {
+	background-color: #c4bdbd;
+	width: max-content;
+	padding: 10px;
+	border-radius: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem auto;
+}
+
+.box ul {
+	list-style-type: none;
+	display: flex;
+	gap: 0.5rem;
+	margin: 0 10px;
+}
+
+.box ul li {
+	list-style: none;
+	margin: 5px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 100px;
+	align-items: center;
+}
+
+.box ul li a {
+	font-size: 28px;
+	padding: 0 10px;
+	text-decoration: none;
+	align-items: center;
+	color: #000;
+	display: block;
+	border-radius: 100px;
+	transition: 0.5s;
+}
+
+.box ul li .active_page {
+	background-color: rgb(224, 32, 73);
+	color: white;
+}
+
+.box ul li a:hover,
+.box button a:hover {
+	background-color: rgb(224, 32, 73);
+	color: white;
+}
+
+.box button {
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #f3f3f3;
+	border: none;
+	cursor: pointer;
+	border-radius: 100px;
+	overflow: hidden;
+}
+
+.box button a {
+	text-decoration: none;
+	font-size: 2rem;
+	font-weight: 900;
+	padding: 10px 20px;
+	display: block;
+	color: #000;
+}
+
+/* BreakPoints */
+@media screen and (max-width: 768px) {
+	.header__container {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 1rem;
+	}
+
+	.nav {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.header {
+		max-width: 100%;
+		height: 30rem;
+		margin-top: 28rem;
+		padding: 0 1.5rem;
+	}
+
+	.loader {
+		margin: 30rem auto;
+		width: 140px;
+		height: 150px;
+	}
+
+	.user {
+		flex-direction: column;
+	}
+
+	.user__secondaryInfo {
+		flex-direction: column;
+	}
+
+	.user__repositories {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: 1rem;
+	}
+
+	.box {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.box ul {
+		flex-direction: column;
+		align-items: flex-start;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+
+	.box ul li {
+		margin: 5px 0;
+	}
+
+	.box button {
+		margin: 0 auto;
+	}
+
+}
+
+/* BreakPoints */
