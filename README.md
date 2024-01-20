@@ -18,7 +18,7 @@ Clone the repository:
 
 git clone https://github.com/kumaravnish25/Github-Profile-Search-Finder.git
 
-# screenshots
+# Screenshots
 
 ![image](https://github.com/kumaravnish25/Github-Profile-Search-Finder/assets/132667440/2e8c7e5c-c3e8-407b-84a3-34a61e8b7567) ![image](https://github.com/kumaravnish25/Github-Profile-Search-Finder/assets/132667440/3268ed83-b119-4b05-b20e-aaaeda8f60f4) ![image](https://github.com/kumaravnish25/Github-Profile-Search-Finder/assets/132667440/6c36091f-a098-4331-a1cb-4561c556f4e4)
 
