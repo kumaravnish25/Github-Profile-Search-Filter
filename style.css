@@ -345,24 +345,34 @@ main {
 
 	.user__repositories {
 		display: grid;
+		
 		grid-template-columns: 1fr;
 		gap: 1rem;
+	}
+	.repository__name {
+		font-size: 1.5rem;
+		font-weight: 800;
+	}
+
+	#box{
+		width: 100%;
+		
 	}
 
 	.box {
 		border-radius: 15px;
+		margin: 0px;
 		padding: 15px;
 		width: 100%;
 		display: grid;
 		grid-template-areas: 
-		'num num' 
-		'pre nex';
+		'num num num num num num' 
+		'. pre pre nex nex .';
 		gap: 20px;
 	}
 
 	.box ul {
 		flex-direction: column;
-		width: 40rem;
 		align-items: flex-start;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, 30px);
