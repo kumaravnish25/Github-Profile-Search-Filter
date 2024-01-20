@@ -375,10 +375,14 @@ main {
 		flex-direction: column;
 		align-items: flex-start;
 		display: grid;
-		grid-template-columns: repeat(auto-fit, 30px);
-		gap: 30px;
+		grid-template-columns: repeat(auto-fit, 25px);
+		gap: 24px;
 		grid-area: num;	
 		justify-content: center;
+		padding-left: 0;
+	}
+	.box ul li{
+		background-color: #009b60;
 	}
 
 	.prev{
