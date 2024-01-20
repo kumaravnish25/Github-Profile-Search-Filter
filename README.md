@@ -25,7 +25,7 @@ git clone https://github.com/kumaravnish25/Github-Profile-Search-Finder.git
 
 # Demo URL
 
-Click here:- https://youtu.be/8W7S5mmu5kw?si=FIR0NzcqXI0pixpy
+Click here:- https://youtu.be/8W7S5mmu5kw?si=if5xM--vlxFIgRXp
 
 Live Website:- https://kgithubprofilefinder.netlify.app/
 
