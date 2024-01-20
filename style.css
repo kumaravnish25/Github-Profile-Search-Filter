@@ -350,23 +350,32 @@ main {
 	}
 
 	.box {
-		flex-direction: column;
-		align-items: flex-start;
+		border-radius: 15px;
+		padding: 15px;
+		width: 100%;
+		display: grid;
+		grid-template-areas: 
+		'num num' 
+		'pre nex';
+		gap: 20px;
 	}
 
 	.box ul {
 		flex-direction: column;
+		width: 40rem;
 		align-items: flex-start;
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+		grid-template-columns: repeat(auto-fit, 30px);
+		gap: 30px;
+		grid-area: num;	
+		justify-content: center;
 	}
 
-	.box ul li {
-		margin: 5px 0;
+	.prev{
+		grid-area: pre;
 	}
-
-	.box button {
-		margin: 0 auto;
+	.next{
+		grid-area: nex;
 	}
 
 }
