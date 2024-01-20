@@ -381,9 +381,6 @@ main {
 		justify-content: center;
 		padding-left: 0;
 	}
-	.box ul li{
-		background-color: #009b60;
-	}
 
 	.prev{
 		grid-area: pre;
